@@ -11,7 +11,7 @@ console.log("Loaded");
         resultadoResp.textContent = "";
         const cidade = search.value   
     
-        fetch(`http://localhost:3000/weather?localizacao=${cidade}`)
+        fetch(`/weather?localizacao=${cidade}`)
         .then((resp)=>resp.json())
         .then((data)=> {
             if(data.error){
